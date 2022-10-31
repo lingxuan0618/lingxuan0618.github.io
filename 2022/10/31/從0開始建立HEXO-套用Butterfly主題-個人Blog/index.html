@@ -1,0 +1,321 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>從0開始建立HEXO-套用Butterfly主題-個人Blog | Xuan's Blog</title><meta name="author" content="Xuan"><meta name="copyright" content="Xuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="來記錄一下前幾天建立 Hexo * Butterfly Theme 的過程XD 挑選主題在決定建立 Hexo 之後，就開始挑選主題啦~稍微爬文之後，覺得自己比較中意的有三個主題  Hexo x Butterfly  Butterfly Hexo x Next Theme NexT Hexo x icarus ICARUS  最後參考了幾個使用該主題的部落格之後，覺得 Butterfly 好像比較符">
+<meta property="og:type" content="article">
+<meta property="og:title" content="從0開始建立HEXO-套用Butterfly主題-個人Blog">
+<meta property="og:url" content="https://lingxuan0618.github.io/2022/10/31/%E5%BE%9E0%E9%96%8B%E5%A7%8B%E5%BB%BA%E7%AB%8BHEXO-%E5%A5%97%E7%94%A8Butterfly%E4%B8%BB%E9%A1%8C-%E5%80%8B%E4%BA%BABlog/index.html">
+<meta property="og:site_name" content="Xuan&#39;s Blog">
+<meta property="og:description" content="來記錄一下前幾天建立 Hexo * Butterfly Theme 的過程XD 挑選主題在決定建立 Hexo 之後，就開始挑選主題啦~稍微爬文之後，覺得自己比較中意的有三個主題  Hexo x Butterfly  Butterfly Hexo x Next Theme NexT Hexo x icarus ICARUS  最後參考了幾個使用該主題的部落格之後，覺得 Butterfly 好像比較符">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://lingxuan0618.github.io/img/xuan.png">
+<meta property="article:published_time" content="2022-10-30T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-10-31T13:46:09.227Z">
+<meta property="article:author" content="Xuan">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lingxuan0618.github.io/img/xuan.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://lingxuan0618.github.io/2022/10/31/%E5%BE%9E0%E9%96%8B%E5%A7%8B%E5%BB%BA%E7%AB%8BHEXO-%E5%A5%97%E7%94%A8Butterfly%E4%B8%BB%E9%A1%8C-%E5%80%8B%E4%BA%BABlog/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查詢的內容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '從0開始建立HEXO-套用Butterfly主題-個人Blog',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-31 21:46:09'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/xuan.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Xuan's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜尋</span></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">從0開始建立HEXO-套用Butterfly主題-個人Blog</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2022-10-30T16:00:00.000Z" title="發表於 2022-10-31 00:00:00">2022-10-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2022-10-31T13:46:09.227Z" title="更新於 2022-10-31 21:46:09">2022-10-31</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="從0開始建立HEXO-套用Butterfly主題-個人Blog"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">閱讀量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><p>來記錄一下前幾天建立 Hexo * Butterfly Theme 的過程XD</p>
+<h2 id="挑選主題"><a href="#挑選主題" class="headerlink" title="挑選主題"></a>挑選主題</h2><p>在決定建立 Hexo 之後，就開始挑選主題啦~<br>稍微爬文之後，覺得自己比較中意的有三個主題</p>
+<ul>
+<li>Hexo x Butterfly  <a target="_blank" rel="noopener" href="https://butterfly.js.org/">Butterfly</a></li>
+<li>Hexo x Next <a target="_blank" rel="noopener" href="https://theme-next.js.org/">Theme NexT</a></li>
+<li>Hexo x icarus <a target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-theme-icarus">ICARUS</a></li>
+</ul>
+<p>最後參考了幾個使用該主題的部落格之後，覺得 Butterfly 好像比較符合我的胃口，所以就決定是 Butterfly 啦!<br>(以後真的膩了再考慮換一個或者重新建立一個XD)</p>
+<hr>
+<h2 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h2><p>參考了幾篇文章:<br><a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/21cfbf15/#%E5%AE%89%E8%A3%9D">Butterfly 安裝文檔(一) 快速開始</a><br><a target="_blank" rel="noopener" href="https://ouoholly.github.io/post/build-github-hexo-butterfly-record/">【紀錄】由零開始，Github + Hexo (Butterfly theme) 搭建個人博客</a><br><a target="_blank" rel="noopener" href="https://tzy1997.com/articles/hexo1606/">基於Hexo 從零開始搭建個人博客（六</a><br>第一個是 Butterfly 的作者<br>第二個跟第三個都是我覺得把這個主題建立的很有風格的人!<br>也參考了這三個文檔建立起了我的 Blog 啦</p>
+<hr>
+<h2 id="建立過程"><a href="#建立過程" class="headerlink" title="建立過程"></a>建立過程</h2><h3 id="下載及安裝Node-js"><a href="#下載及安裝Node-js" class="headerlink" title="下載及安裝Node.js"></a>下載及安裝Node.js</h3><p>因為我本身就有安裝惹 所以這次就沒有安裝XD</p>
+<p>沒有安裝過的話，可以到<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">官網</a>上做安裝</p>
+<p>如果沒有安裝過 Node.js 的人也可以考慮直接安裝 nvm，可以自由切換 Node.js 版本<br>可以參考卡斯伯老師的文章<a target="_blank" rel="noopener" href="https://www.casper.tw/development/2022/01/10/install-nvm/">安裝 nvm 環境，Node.js 開發者必學（Windows、Mac 均適用）</a></p>
+<blockquote>
+<p>檢查電腦中的Node版本<br>打開Windows cmd輸入第1及第3行</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">v14.<span class="number">9</span>.<span class="number">1</span></span><br><span class="line">npm -v</span><br><span class="line"><span class="number">6</span>.<span class="number">14</span>.<span class="number">16</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="下載及安裝-Git"><a href="#下載及安裝-Git" class="headerlink" title="下載及安裝 Git"></a>下載及安裝 Git</h3><p>我的電腦也已經有這個環境了XD<br>不過一樣也可以到<a target="_blank" rel="noopener" href="https://git-scm.com/">官網</a>做下載</p>
+<blockquote>
+<p>檢查電腦中的git版本<br>出現版本號應該就是沒問題了</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br><span class="line">git version <span class="number">2</span>.<span class="number">33</span>.<span class="number">0</span>.windows.<span class="number">2</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>也可以右鍵點擊桌面，如果看見Git GUI Here 和 Git Bash Here 的選項，就代表安裝成功啦!</p>
+<h3 id="在-GitHub-建立-Repositories"><a href="#在-GitHub-建立-Repositories" class="headerlink" title="在 GitHub 建立 Repositories"></a>在 GitHub 建立 Repositories</h3><p>如果還沒有 GitHub 的帳號，要先建立一個<br><a target="_blank" rel="noopener" href="https://github.com/">官網註冊</a><br>1.註冊完之後<br>2.建立一個新的 Repo <a target="_blank" rel="noopener" href="https://github.com/new">Create Repo</a><br>3.Repository name 欄裡必須輸入成右方的格式： <code>&lt;username)&gt;.github.io</code></p>
+<blockquote>
+<p>EX: 我的 username 是 lingxuan0618，那 Repository name 欄裡就輸入 lingxuan0618.github.io</p>
+</blockquote>
+<h3 id="用-Git-讓本機連接至-Github"><a href="#用-Git-讓本機連接至-Github" class="headerlink" title="用 Git 讓本機連接至 Github"></a>用 Git 讓本機連接至 Github</h3><p>1.右鍵點擊桌面，點選 Git Bash Here，然後一個界面會彈出來（GitBash 的界面）。</p>
+<p>2.在 GitBash 界面中輸入以下兩行命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &lt;username&gt;        <span class="comment">#輸入你的 github username</span></span><br><span class="line">git config --global user.email xxx@xxx.com   <span class="comment">#輸入你註冊 github 時用的 email</span></span><br></pre></td></tr></table></figure>
+
+<p>3.接著在C:\Users[username]的資料夾中，會看見一個.git.config 的檔案<br>打開它確認裡面的內容~</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[user]</span><br><span class="line">    email = xxxxx@xxxx.com   <span class="comment">#這裡顯示的是註冊 github 時用的 email</span></span><br><span class="line">    name = &lt;username&gt;        <span class="comment">#這裡顯示的是你的 github username</span></span><br></pre></td></tr></table></figure>
+<p>4.在Git Bash介面上輸入下面的指令，然後一直按Enter</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C xxxxx@xxxx.com <span class="comment">#輸入註冊 github 時用的 email</span></span><br></pre></td></tr></table></figure>
+
+<p>5.接著在 C:\Users[username] 裡，會看鍵一個叫 .ssh 的資料夾<br>打開叫做 id_rsa.pub 的檔案，複製裡面的內容</p>
+<p>6.Add New SSH key 到你的 github account裡面 ~<br>到 <a target="_blank" rel="noopener" href="https://github.com/settings/ssh/new">github.com &gt; settings &gt; SSH and GPG keys</a> 這裡，貼上id_rsa.pub 檔案中的內容到 “Key” 框中。</p>
+<p>7.回到 GitBash界面，輸入以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>會在介面上看見 <code>Hi &lt;username&gt; ! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code><br>以後就可以利用 GitBash 介面連上 Blog 啦!!!</p>
+<h3 id="安裝HEXO"><a href="#安裝HEXO" class="headerlink" title="安裝HEXO"></a>安裝HEXO</h3><p>建立一個資料夾，之後放置屬於你的Blog的東西</p>
+<blockquote>
+<p>EX: 我在桌面建立<code>C:\Users\User\Desktop\githubBlog</code><br>之後我就可以在桌面找到資料夾，右鍵打開GitBash~</p>
+</blockquote>
+<ol>
+<li>所以我在這個資料夾右鍵GitBash之後</li>
+<li>在介面中依序輸入下列五個指令<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli  <span class="comment"># 安裝 Hexo</span></span><br><span class="line">hexo init                <span class="comment"># 在目前所在的資料夾下載建立網站所需要的文件</span></span><br><span class="line">npm install              <span class="comment"># 安裝相關依賴包</span></span><br><span class="line">hexo g                   <span class="comment"># generate - 根據配置文件 &quot;__config.yml&quot; 渲染生成靜態頁面</span></span><br><span class="line">hexo s                   <span class="comment"># server   - starts a local server</span></span><br></pre></td></tr></table></figure>
+3.接著會在資料夾看到生成了許多文件!<br>4.在網址列輸入<a target="_blank" rel="noopener" href="http://localhost:4000/%EF%BC%8C%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%80%8F%E8%A6%BD%E5%88%B0%E7%95%AB%E9%9D%A2%E5%95%A6">http://localhost:4000/，就可以瀏覽到畫面啦</a>~~<br><a target="_blank" rel="noopener" href="https://hexojs.github.io/hexo-theme-landscape/">預設Theme</a></li>
+</ol>
+<p>4.點進資料夾，會看見一個叫做 _config.yml 的檔案，打開後修改參數為下</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://&lt;username&gt;.github.io</span> <span class="comment">#&lt;username&gt;填寫github username</span></span><br><span class="line"></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git</span> <span class="comment">#&lt;username&gt;填寫github username</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<p>5.把本地的資源 PUSH 到 GitHub 上</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g <span class="comment"># generate static files</span></span><br><span class="line">hexo d <span class="comment"># deploy - 部署/上傳</span></span><br></pre></td></tr></table></figure>
+
+<p>DO RE MI SO ~<br>接著就可以在網址列輸入<code> https://&lt;username&gt;.github.io</code><br>就可以瀏覽到專屬自己的Blog啦~~</p>
+<hr>
+<p>接著繼續看著參考的文章<br>繼續把Theme建立起來XDD</p>
+<h2 id="更換Theme-gt-gt-gt-Butterfly"><a href="#更換Theme-gt-gt-gt-Butterfly" class="headerlink" title="更換Theme &gt;&gt;&gt; Butterfly"></a>更換Theme &gt;&gt;&gt; Butterfly</h2><h3 id="下載Butterfly的套件"><a href="#下載Butterfly的套件" class="headerlink" title="下載Butterfly的套件"></a>下載Butterfly的套件</h3><p>我都習慣打開GitBash之後，打上cd 空格，之後把資料夾拉進介面中，就會進入該目錄底下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> C:\Users\User\Desktop\githubBlog</span><br></pre></td></tr></table></figure>
+<p>接著我們來下載套件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly</span><br><span class="line">npm install cheerio@0.22.0 --save</span><br><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure>
+<p>然後就會在 .\githubBlog\themes裡面多了一個叫做<code>Butterfly</code>的資料夾</p>
+<h3 id="更改主題"><a href="#更改主題" class="headerlink" title="更改主題"></a>更改主題</h3><p>開啓.\githubBlog_config.yml，把主題改為 Butterfly</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">Butterfly</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h3><p>Front-matter 是 markdown 文件最上方以—分隔的區域，用來指定個別檔案的變數</p>
+<ul>
+<li>Page Front-matter - 頁面配置</li>
+<li>Post Front-matter - 文章頁配置</li>
+</ul>
+<blockquote>
+<p>非必要的可以自己選擇要不要加在檔案中</p>
+</blockquote>
+<p>可以參考<br><a target="_blank" rel="noopener" href="https://ouoholly.github.io/post/build-github-hexo-butterfly-record/">【紀錄】由零開始，Github + Hexo (Butterfly theme) 搭建個人博客</a><br><a target="_blank" rel="noopener" href="https://tzy1997.com/articles/hexo1606/">基於Hexo 從零開始搭建個人博客（六</a><br>這兩位大大的，寫得很詳細~<br>可以依據參數做設定</p>
+<!-- #### Page Front-matter
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">--- </span><br><span class="line">title: </span><br><span class="line">date: </span><br><span class="line">updated: </span><br><span class="line">type: </span><br><span class="line">comments: </span><br><span class="line">description: </span><br><span class="line">keywords: </span><br><span class="line">top <span class="emphasis">_img: </span></span><br><span class="line"><span class="emphasis">mathjax: </span></span><br><span class="line"><span class="emphasis">katex: </span></span><br><span class="line"><span class="emphasis">aside: </span></span><br><span class="line"><span class="emphasis">aplayer: </span></span><br><span class="line"><span class="emphasis">highlight_</span> shrink: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>寫法</th>
+<th>解釋</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>title</td>
+<td>&lt;必要&gt;頁面標題</td>
+</tr>
+<tr>
+<td>date</td>
+<td>&lt;必要&gt;頁面創建日期</td>
+</tr>
+<tr>
+<td>type</td>
+<td>&lt;必要&gt; 標籤、分類和友情鏈接三個頁面需要配置</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>&lt;非必要&gt;頁面更新日期</td>
+</tr>
+<tr>
+<td>description</td>
+<td>&lt;非必要&gt;頁面描述</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>&lt;非必要&gt;頁面關鍵字</td>
+</tr>
+<tr>
+<td>comments</td>
+<td>&lt;非必要&gt;顯示頁面評論模塊(默認是true)</td>
+</tr>
+<tr>
+<td>top_img</td>
+<td>&lt;非必要&gt;頁面頂部圖片</td>
+</tr>
+<tr>
+<td>mathjax</td>
+<td>&lt;非必要&gt;顯示mathjax(當設置mathjax的per_page: false時，才需要配置，默認是false)</td>
+</tr>
+<tr>
+<td>katex</td>
+<td>&lt;非必要&gt;顯示katex(當設置katex的per_page: false時，才需要配置，默認是false)</td>
+</tr>
+<tr>
+<td>aside</td>
+<td>&lt;非必要&gt;顯示側邊欄(默認true)</td>
+</tr>
+<tr>
+<td>aplayer</td>
+<td>&lt;非必要&gt;在需要的頁面加載aplayer的js和css,請參考文章下面的音樂配置</td>
+</tr>
+<tr>
+<td>highlight_shrink</td>
+<td>&lt;非必要&gt;配置代碼框是否展開(true&#x2F;false)(默認為設置中highlight_shrink的配置)</td>
+</tr>
+</tbody></table>
+<h4 id="Post-Front-matter"><a href="#Post-Front-matter" class="headerlink" title="Post Front-matter"></a>Post Front-matter</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">--- </span><br><span class="line">title: </span><br><span class="line">date: </span><br><span class="line">updated: </span><br><span class="line">tags: </span><br><span class="line">categories: </span><br><span class="line">keywords: </span><br><span class="line">description: </span><br><span class="line">top <span class="emphasis">_img: </span></span><br><span class="line"><span class="emphasis">comments: </span></span><br><span class="line"><span class="emphasis">cover: </span></span><br><span class="line"><span class="emphasis">toc: </span></span><br><span class="line"><span class="emphasis">toc_</span> number: </span><br><span class="line">toc <span class="emphasis">_style_</span> simple: </span><br><span class="line">copyright: </span><br><span class="line">copyright <span class="emphasis">_author: </span></span><br><span class="line"><span class="emphasis">copyright_</span> author <span class="emphasis">_href: </span></span><br><span class="line"><span class="emphasis">copyright_</span> url: </span><br><span class="line">copyright <span class="emphasis">_info: </span></span><br><span class="line"><span class="emphasis">mathjax: </span></span><br><span class="line"><span class="emphasis">katex: </span></span><br><span class="line"><span class="emphasis">aplayer: </span></span><br><span class="line"><span class="emphasis">highlight_</span> shrink: </span><br><span class="line"><span class="section">aside: </span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>|寫法	解釋|<br>| —- | —- |<br>|title	&lt;必要&gt;文章標題|<br>|date	&lt;必要&gt;文章創建日期|<br>|updated	&lt;非必要&gt;文章更新日期|<br>|tags	&lt;非必要&gt;文章標籤|<br>|categories	&lt;非必要&gt;文章分類|<br>|keywords	&lt;非必要&gt;文章關鍵字|<br>|description	&lt;非必要&gt;文章描述|<br>|top_img	&lt;非必要&gt;文章頂部圖片|<br>|cover	&lt;非必要&gt;文章縮略圖|<br>|comments	&lt;非必要&gt;顯示文章評論模塊(默認是true)|<br>|toc	&lt;非必要&gt;顯示文章TOC(默認為設置中toc的enable配置)|<br>|toc_number	&lt;非必要&gt;顯示toc_number(默認為設置中toc的number配置)|<br>|toc_style_simple	&lt;非必要&gt;顯示toc 簡潔模式|<br>|copyright	&lt;非必要&gt;顯示文章版權模塊(默認為設置中post_copyright的enable配置)|<br>|copyright_author	&lt;非必要&gt;文章版權模塊的文章作者|<br>|copyright_author_href	&lt;非必要&gt;文章版權模塊的文章作者鏈接|<br>|copyright_url	&lt;非必要&gt;文章版權模塊的文章連結鏈接|<br>|copyright_info	&lt;非必要&gt;文章版權模塊的版權聲明文字|<br>|mathjax	&lt;非必要&gt;顯示mathjax(當設置mathjax的per_page: false時，才需要配置，默認是false)|<br>|katex	&lt;非必要&gt;顯示katex(當設置katex的per_page: false時，才需要配置，默認是false)|<br>|aplayer	&lt;非必要&gt;在需要的頁面加載aplayer的js和css,請參考文章下面的音樂配置|<br>|highlight_shrink	&lt;非必要&gt;配置代碼框是否展開(true&#x2F;false)(默認為設置中highlight_shrink的配置)|<br>|aside	&lt;非必要&gt;顯示側邊欄(默認true)|<br> –&gt;</p>
+<h3 id="常用的指令"><a href="#常用的指令" class="headerlink" title="常用的指令"></a>常用的指令</h3><p>我自己最常用的三個指令就是</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g <span class="comment">#generate static files</span></span><br><span class="line">hexo s <span class="comment">#starts a local server(看localhost的網站XD)</span></span><br><span class="line">hexo g -d <span class="comment"># deploy - 部署/上傳</span></span><br></pre></td></tr></table></figure>
+<p>就是一直在本機端run環境看看自己設定的有什麼效果XD</p>
+<p>至於在部屬前可以輸入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  <span class="comment">#可以清理一些緩存</span></span><br></pre></td></tr></table></figure>
+
+<p>建立文章的時候則是會使用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;title&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>以上 是這次參考大家的文章 跟隨的步驟做一下紀錄<br>至於還有很多更改主題的部分<br>我覺得網路上有很多很多可以參考的<br>就不一一記錄下來了XDDD<br>我也還在慢慢創造出自己最喜歡的Blog<br>大家一起Fighting吧</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://lingxuan0618.github.io">Xuan</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章連結: </span><span class="post-copyright-info"><a href="https://lingxuan0618.github.io/2022/10/31/%E5%BE%9E0%E9%96%8B%E5%A7%8B%E5%BB%BA%E7%AB%8BHEXO-%E5%A5%97%E7%94%A8Butterfly%E4%B8%BB%E9%A1%8C-%E5%80%8B%E4%BA%BABlog/">https://lingxuan0618.github.io/2022/10/31/%E5%BE%9E0%E9%96%8B%E5%A7%8B%E5%BB%BA%E7%AB%8BHEXO-%E5%A5%97%E7%94%A8Butterfly%E4%B8%BB%E9%A1%8C-%E5%80%8B%E4%BA%BABlog/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版權聲明: </span><span class="post-copyright-info">本部落格所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 許可協議。轉載請註明來自 <a href="https://lingxuan0618.github.io" target="_blank">Xuan's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Hexo/">Hexo</a></div><div class="post_share"><div class="social-share" data-image="/img/xuan.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2022/10/30/%E5%88%9D%E6%8E%A2JS%E5%8B%95%E7%95%AB%E5%BA%AB-GreenSock/"><img class="prev-cover" src="/img/xuan.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">初探JS動畫庫-GreenSock</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/xuan.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Xuan</div><div class="author-info__description">不能逃避 那就享受吧><</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/lingxuan0618"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%91%E9%81%B8%E4%B8%BB%E9%A1%8C"><span class="toc-number">1.</span> <span class="toc-text">挑選主題</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%BA%90"><span class="toc-number">2.</span> <span class="toc-text">參考資源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E7%AB%8B%E9%81%8E%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">建立過程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BC%89%E5%8F%8A%E5%AE%89%E8%A3%9DNode-js"><span class="toc-number">3.1.</span> <span class="toc-text">下載及安裝Node.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BC%89%E5%8F%8A%E5%AE%89%E8%A3%9D-Git"><span class="toc-number">3.2.</span> <span class="toc-text">下載及安裝 Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8-GitHub-%E5%BB%BA%E7%AB%8B-Repositories"><span class="toc-number">3.3.</span> <span class="toc-text">在 GitHub 建立 Repositories</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8-Git-%E8%AE%93%E6%9C%AC%E6%A9%9F%E9%80%A3%E6%8E%A5%E8%87%B3-Github"><span class="toc-number">3.4.</span> <span class="toc-text">用 Git 讓本機連接至 Github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%9DHEXO"><span class="toc-number">3.5.</span> <span class="toc-text">安裝HEXO</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%8F%9BTheme-gt-gt-gt-Butterfly"><span class="toc-number">4.</span> <span class="toc-text">更換Theme &gt;&gt;&gt; Butterfly</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BC%89Butterfly%E7%9A%84%E5%A5%97%E4%BB%B6"><span class="toc-number">4.1.</span> <span class="toc-text">下載Butterfly的套件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9%E4%B8%BB%E9%A1%8C"><span class="toc-number">4.2.</span> <span class="toc-text">更改主題</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Front-matter"><span class="toc-number">4.3.</span> <span class="toc-text">Front-matter</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/10/31/%E5%BE%9E0%E9%96%8B%E5%A7%8B%E5%BB%BA%E7%AB%8BHEXO-%E5%A5%97%E7%94%A8Butterfly%E4%B8%BB%E9%A1%8C-%E5%80%8B%E4%BA%BABlog/" title="從0開始建立HEXO-套用Butterfly主題-個人Blog">從0開始建立HEXO-套用Butterfly主題-個人Blog</a><time datetime="2022-10-30T16:00:00.000Z" title="發表於 2022-10-31 00:00:00">2022-10-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/10/30/%E5%88%9D%E6%8E%A2JS%E5%8B%95%E7%95%AB%E5%BA%AB-GreenSock/" title="初探JS動畫庫-GreenSock">初探JS動畫庫-GreenSock</a><time datetime="2022-10-29T16:00:00.000Z" title="發表於 2022-10-30 00:00:00">2022-10-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/10/30/%E5%A6%82%E4%BD%95%E5%9C%A8HEXO%E4%B8%8A%E9%9D%A2-%E6%8F%92%E5%85%A5CodePen%E5%8D%80%E5%A1%8A/" title="如何在HEXO上面-插入CodePen區塊">如何在HEXO上面-插入CodePen區塊</a><time datetime="2022-10-29T16:00:00.000Z" title="發表於 2022-10-30 00:00:00">2022-10-30</time></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(166deg, rgba(0,0,0,1) 13%, rgba(19,37,45,1) 30%, rgba(16,64,85,1) 43%, rgba(16,71,96,1) 49%, rgba(18,67,90,1) 56%, rgba(30,44,51,1) 71%, rgba(1,1,1,1) 92%)"><div id="footer-wrap"><div class="copyright">&copy;2022 By Xuan</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到頂部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜尋</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  資料庫載入中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜尋文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
