@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>使用Python大量修改圖片尺寸 | Xuan's Blog</title><meta name="author" content="Xuan"><meta name="copyright" content="Xuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言大學完樹莓派的時候，有接觸過一點python，去年也有參加python的共學營，喜歡python，但還沒有太深入的研究XDD知道Python可以做到滿多事情的，前陣子有個需求是需要大量修改圖片，本來打算用上班再使用的.NET去處理，但想到要開localhost或者上程式到server跑就覺得好麻煩(x，突然想到我大python感覺就可以做到，於是下班後開始研究… 還沒有深入了解每一行是在寫什麼">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Python大量修改圖片尺寸">
+<meta property="og:url" content="https://lingxuan0618.github.io/2022/11/04/2022-11-04-python-%E5%A4%A7%E9%87%8F%E4%BF%AE%E6%94%B9%E5%9C%96%E7%89%87%E5%B0%BA%E5%AF%B8/index.html">
+<meta property="og:site_name" content="Xuan&#39;s Blog">
+<meta property="og:description" content="前言大學完樹莓派的時候，有接觸過一點python，去年也有參加python的共學營，喜歡python，但還沒有太深入的研究XDD知道Python可以做到滿多事情的，前陣子有個需求是需要大量修改圖片，本來打算用上班再使用的.NET去處理，但想到要開localhost或者上程式到server跑就覺得好麻煩(x，突然想到我大python感覺就可以做到，於是下班後開始研究… 還沒有深入了解每一行是在寫什麼">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://lingxuan0618.github.io/img/xuan.png">
+<meta property="article:published_time" content="2022-11-03T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-11-04T13:37:36.911Z">
+<meta property="article:author" content="Xuan">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="BackEnd">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lingxuan0618.github.io/img/xuan.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://lingxuan0618.github.io/2022/11/04/2022-11-04-python-%E5%A4%A7%E9%87%8F%E4%BF%AE%E6%94%B9%E5%9C%96%E7%89%87%E5%B0%BA%E5%AF%B8/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查詢的內容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '使用Python大量修改圖片尺寸',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-11-04 21:37:36'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/xuan.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Xuan</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Xuan's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜尋</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Xuan</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">使用Python大量修改圖片尺寸</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2022-11-03T16:00:00.000Z" title="發表於 2022-11-04 00:00:00">2022-11-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2022-11-04T13:37:36.911Z" title="更新於 2022-11-04 21:37:36">2022-11-04</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Python/">Python</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="使用Python大量修改圖片尺寸"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">閱讀量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>大學完樹莓派的時候，有接觸過一點python，去年也有參加python的共學營，喜歡python，但還沒有太深入的研究XDD<br>知道Python可以做到滿多事情的，前陣子有個需求是需要大量修改圖片，本來打算用上班再使用的.NET去處理，但想到要開localhost或者上程式到server跑就覺得好麻煩(x，突然想到我大python感覺就可以做到，於是下班後開始研究…</p>
+<h4 id="還沒有深入了解每一行是在寫什麼，之後如果繼續踏上python之路，有學習到什麼相關，再回來補充XD"><a href="#還沒有深入了解每一行是在寫什麼，之後如果繼續踏上python之路，有學習到什麼相關，再回來補充XD" class="headerlink" title="還沒有深入了解每一行是在寫什麼，之後如果繼續踏上python之路，有學習到什麼相關，再回來補充XD"></a>還沒有深入了解每一行是在寫什麼，之後如果繼續踏上python之路，有學習到什麼相關，再回來補充XD</h4><h2 id="原始範例圖片"><a href="#原始範例圖片" class="headerlink" title="原始範例圖片"></a>原始範例圖片</h2><p><img src="https://imgur.com/vlFMiFV.png" alt="範例圖片"></p>
+<table>
+<thead>
+<tr>
+<th>圖片名稱</th>
+<th>尺寸大小</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>海.jpg</td>
+<td>2048*1365</td>
+</tr>
+<tr>
+<td>畢業.jpg</td>
+<td>2362*1772</td>
+</tr>
+</tbody></table>
+<h2 id="調整大小-會壓縮比例"><a href="#調整大小-會壓縮比例" class="headerlink" title="調整大小(會壓縮比例)"></a>調整大小(會壓縮比例)</h2><p>先引入<a target="_blank" rel="noopener" href="https://pillow.readthedocs.io/en/stable/">PIL</a>模組<br>接著決定路徑<br>再來獲取每張圖片做壓縮尺寸</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 調整大小</span></span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span>  Image</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line">path = <span class="string">&quot;./Img&quot;</span>  <span class="comment">#圖片所在的文件夾路徑</span></span><br><span class="line"><span class="keyword">for</span> maindir, subdir,file_name_list <span class="keyword">in</span> os.walk(path):</span><br><span class="line">    <span class="keyword">for</span> file_name <span class="keyword">in</span> file_name_list:</span><br><span class="line">        image = os.path.join(maindir, file_name) <span class="comment">#獲取每張圖片的路徑</span></span><br><span class="line">        file = Image.<span class="built_in">open</span>(image)</span><br><span class="line">        out = file.resize((<span class="number">480</span>,<span class="number">360</span>),Image.ANTIALIAS)  <span class="comment">#以高質量修改圖片尺寸爲（480，360）</span></span><br><span class="line">        <span class="comment"># out.save(image)                            #以同名保存到原路徑</span></span><br><span class="line">        out.save(<span class="string">f&#x27;./newImg/<span class="subst">&#123;image&#125;</span>&#x27;</span>) <span class="comment"># 原圖存檔在新目錄</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://imgur.com/xMcCju4.png" alt="Imgur"></p>
+<table>
+<thead>
+<tr>
+<th>圖片名稱</th>
+<th>尺寸大小</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>海.jpg</td>
+<td>480*360</td>
+</tr>
+<tr>
+<td>畢業.jpg</td>
+<td>480*360</td>
+</tr>
+</tbody></table>
+<h4 id="左邊是原圖，右邊則是壓縮過後的圖片"><a href="#左邊是原圖，右邊則是壓縮過後的圖片" class="headerlink" title="左邊是原圖，右邊則是壓縮過後的圖片"></a>左邊是原圖，右邊則是壓縮過後的圖片</h4><h4 id="可以發現因為不是等比例壓縮，所以大家都變瘦變高了-x"><a href="#可以發現因為不是等比例壓縮，所以大家都變瘦變高了-x" class="headerlink" title="可以發現因為不是等比例壓縮，所以大家都變瘦變高了(x"></a>可以發現因為不是等比例壓縮，所以大家都變瘦變高了(x</h4><h2 id="調整比例-可能無法完整符合需求尺寸"><a href="#調整比例-可能無法完整符合需求尺寸" class="headerlink" title="調整比例(可能無法完整符合需求尺寸)"></a>調整比例(可能無法完整符合需求尺寸)</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 調整大小</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> glob</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line">imgs = glob.glob(<span class="string">&#x27;./Img/*.[jJ][pP][gG]&#x27;</span>) <span class="comment">#圖片所在的文件夾路徑</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> imgs:</span><br><span class="line">    im = Image.<span class="built_in">open</span>(i)</span><br><span class="line">    size = im.size</span><br><span class="line">    <span class="built_in">max</span> = <span class="number">480</span>                    <span class="comment"># 設定長或寬最大的數值</span></span><br><span class="line">    <span class="keyword">if</span> size[<span class="number">0</span>]&gt;size[<span class="number">1</span>]:          <span class="comment"># 如果原始圖片 width 大於 height</span></span><br><span class="line">        scale = size[<span class="number">1</span>]/size[<span class="number">0</span>]  <span class="comment"># 設定 scale 為 height/width</span></span><br><span class="line">        w = <span class="built_in">max</span>                  <span class="comment"># 設定調整後的寬度為最大的數值</span></span><br><span class="line">        h = <span class="built_in">int</span>(<span class="built_in">max</span>*scale)       <span class="comment"># 設定調整後的高度為 max 乘以 scale ( 使用 int 去除小數點 )</span></span><br><span class="line">    <span class="keyword">else</span>:                        <span class="comment"># 如果原始圖片 width 小於等於 height</span></span><br><span class="line">        scale = size[<span class="number">0</span>]/size[<span class="number">1</span>]  <span class="comment"># 設定 scale 為 width/height</span></span><br><span class="line">        w = <span class="built_in">int</span>(<span class="built_in">max</span>*scale)       <span class="comment"># 設定調整後的寬度為 max 乘以 scale ( 使用 int 去除小數點 )</span></span><br><span class="line">        h = <span class="built_in">max</span>                  <span class="comment"># 設定調整後的高度為最大的數值</span></span><br><span class="line">    <span class="comment"># name = i.split(&#x27;/&#x27;)[::-1][0]</span></span><br><span class="line">    name = i.split(<span class="string">&#x27;\\&#x27;</span>)[<span class="number">1</span>]</span><br><span class="line">    im2 = im.resize((w, h))      <span class="comment"># 調整尺寸</span></span><br><span class="line">    <span class="comment"># im2.save(i) #以同名保存到原路徑</span></span><br><span class="line">    im2.save(<span class="string">f&#x27;./newImg(ratio)/<span class="subst">&#123;name&#125;</span>&#x27;</span>) <span class="comment"># 原圖存檔在新目錄</span></span><br><span class="line">    <span class="comment">#jpg = name.replace(&#x27;JPG&#x27;,&#x27;jpg&#x27;)  # 取出圖片檔名，將 jpg 換成 png</span></span><br><span class="line">    <span class="comment">#png = jpg.replace(&#x27;jpg&#x27;,&#x27;png&#x27;)  # 取出圖片檔名，將 jpg 換成 png</span></span><br><span class="line">    <span class="comment">#im2.save(f&#x27;./官網客戶需求產品圖--480×320/&#123;png&#125;&#x27;, &#x27;png&#x27;)   # 轉換成 png 並存檔在新目錄</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://imgur.com/njx6f9a.jpg" alt="Imgur"></p>
+<table>
+<thead>
+<tr>
+<th>圖片名稱</th>
+<th>尺寸大小</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>海.jpg</td>
+<td>480*319</td>
+</tr>
+<tr>
+<td>畢業.jpg</td>
+<td>480*360</td>
+</tr>
+</tbody></table>
+<h4 id="圖片是按照設定的480去等比例縮小-就不會被壓縮啦"><a href="#圖片是按照設定的480去等比例縮小-就不會被壓縮啦" class="headerlink" title="圖片是按照設定的480去等比例縮小~就不會被壓縮啦"></a>圖片是按照設定的480去等比例縮小~就不會被壓縮啦</h4><h3 id="參考文章"><a href="#參考文章" class="headerlink" title="參考文章"></a>參考文章</h3><p><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10287530?sc=iThelpR">( Day 3 ) 批次調整圖片尺寸</a><br><a target="_blank" rel="noopener" href="https://vimsky.com/zh-tw/examples/detail/python-ex-classes.query-File-save-method.html">Python File.save方法代碼示例</a><br><a target="_blank" rel="noopener" href="https://www.twblogs.net/a/5d7e2f5dbd9eee541c346249">python批量修改圖片尺寸</a><br><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10226578">Day24-Python 影像處理套件 PIL</a><br><a target="_blank" rel="noopener" href="https://ithelp.ithome.com.tw/articles/10262521">python 好用套件：利用 glob 抓取路徑下檔案名稱</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://lingxuan0618.github.io">Xuan</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章連結: </span><span class="post-copyright-info"><a href="https://lingxuan0618.github.io/2022/11/04/2022-11-04-python-%E5%A4%A7%E9%87%8F%E4%BF%AE%E6%94%B9%E5%9C%96%E7%89%87%E5%B0%BA%E5%AF%B8/">https://lingxuan0618.github.io/2022/11/04/2022-11-04-python-%E5%A4%A7%E9%87%8F%E4%BF%AE%E6%94%B9%E5%9C%96%E7%89%87%E5%B0%BA%E5%AF%B8/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版權聲明: </span><span class="post-copyright-info">本部落格所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 許可協議。轉載請註明來自 <a href="https://lingxuan0618.github.io" target="_blank">Xuan's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Python/">Python</a><a class="post-meta__tags" href="/tags/BackEnd/">BackEnd</a></div><div class="post_share"><div class="social-share" data-image="/img/xuan.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2022/11/03/%E7%B6%B2%E9%A0%81%E4%B8%8A%E4%B8%AD%E6%96%87%E8%8B%B1%E6%96%87%E5%A5%97%E7%94%A8%E4%B8%8D%E5%90%8Cfont-family/"><img class="prev-cover" src="/img/xuan.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">網頁上中英文套用不同的font-family</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/xuan.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Xuan</div><div class="author-info__description">Everything Will Be Fine(๑•̀ω•́)</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/lingxuan0618"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%82%84%E6%B2%92%E6%9C%89%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3%E6%AF%8F%E4%B8%80%E8%A1%8C%E6%98%AF%E5%9C%A8%E5%AF%AB%E4%BB%80%E9%BA%BC%EF%BC%8C%E4%B9%8B%E5%BE%8C%E5%A6%82%E6%9E%9C%E7%B9%BC%E7%BA%8C%E8%B8%8F%E4%B8%8Apython%E4%B9%8B%E8%B7%AF%EF%BC%8C%E6%9C%89%E5%AD%B8%E7%BF%92%E5%88%B0%E4%BB%80%E9%BA%BC%E7%9B%B8%E9%97%9C%EF%BC%8C%E5%86%8D%E5%9B%9E%E4%BE%86%E8%A3%9C%E5%85%85XD"><span class="toc-number">1.0.1.</span> <span class="toc-text">還沒有深入了解每一行是在寫什麼，之後如果繼續踏上python之路，有學習到什麼相關，再回來補充XD</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E5%A7%8B%E7%AF%84%E4%BE%8B%E5%9C%96%E7%89%87"><span class="toc-number">2.</span> <span class="toc-text">原始範例圖片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AA%BF%E6%95%B4%E5%A4%A7%E5%B0%8F-%E6%9C%83%E5%A3%93%E7%B8%AE%E6%AF%94%E4%BE%8B"><span class="toc-number">3.</span> <span class="toc-text">調整大小(會壓縮比例)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A6%E9%82%8A%E6%98%AF%E5%8E%9F%E5%9C%96%EF%BC%8C%E5%8F%B3%E9%82%8A%E5%89%87%E6%98%AF%E5%A3%93%E7%B8%AE%E9%81%8E%E5%BE%8C%E7%9A%84%E5%9C%96%E7%89%87"><span class="toc-number">3.0.1.</span> <span class="toc-text">左邊是原圖，右邊則是壓縮過後的圖片</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%AF%E4%BB%A5%E7%99%BC%E7%8F%BE%E5%9B%A0%E7%82%BA%E4%B8%8D%E6%98%AF%E7%AD%89%E6%AF%94%E4%BE%8B%E5%A3%93%E7%B8%AE%EF%BC%8C%E6%89%80%E4%BB%A5%E5%A4%A7%E5%AE%B6%E9%83%BD%E8%AE%8A%E7%98%A6%E8%AE%8A%E9%AB%98%E4%BA%86-x"><span class="toc-number">3.0.2.</span> <span class="toc-text">可以發現因為不是等比例壓縮，所以大家都變瘦變高了(x</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AA%BF%E6%95%B4%E6%AF%94%E4%BE%8B-%E5%8F%AF%E8%83%BD%E7%84%A1%E6%B3%95%E5%AE%8C%E6%95%B4%E7%AC%A6%E5%90%88%E9%9C%80%E6%B1%82%E5%B0%BA%E5%AF%B8"><span class="toc-number">4.</span> <span class="toc-text">調整比例(可能無法完整符合需求尺寸)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%96%E7%89%87%E6%98%AF%E6%8C%89%E7%85%A7%E8%A8%AD%E5%AE%9A%E7%9A%84480%E5%8E%BB%E7%AD%89%E6%AF%94%E4%BE%8B%E7%B8%AE%E5%B0%8F-%E5%B0%B1%E4%B8%8D%E6%9C%83%E8%A2%AB%E5%A3%93%E7%B8%AE%E5%95%A6"><span class="toc-number">4.0.1.</span> <span class="toc-text">圖片是按照設定的480去等比例縮小~就不會被壓縮啦</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%83%E8%80%83%E6%96%87%E7%AB%A0"><span class="toc-number">4.1.</span> <span class="toc-text">參考文章</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/11/04/2022-11-04-python-%E5%A4%A7%E9%87%8F%E4%BF%AE%E6%94%B9%E5%9C%96%E7%89%87%E5%B0%BA%E5%AF%B8/" title="使用Python大量修改圖片尺寸">使用Python大量修改圖片尺寸</a><time datetime="2022-11-03T16:00:00.000Z" title="發表於 2022-11-04 00:00:00">2022-11-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/11/03/%E7%B6%B2%E9%A0%81%E4%B8%8A%E4%B8%AD%E6%96%87%E8%8B%B1%E6%96%87%E5%A5%97%E7%94%A8%E4%B8%8D%E5%90%8Cfont-family/" title="網頁上中英文套用不同的font-family">網頁上中英文套用不同的font-family</a><time datetime="2022-11-02T16:00:00.000Z" title="發表於 2022-11-03 00:00:00">2022-11-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/11/02/%E5%88%9D%E6%8E%A2JS%E5%8B%95%E7%95%AB%E5%BA%AB-GreenSock-%E4%BA%8C/" title="初探JS動畫庫-GreenSock(二)">初探JS動畫庫-GreenSock(二)</a><time datetime="2022-11-01T16:00:00.000Z" title="發表於 2022-11-02 00:00:00">2022-11-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/10/31/%E5%BE%9E0%E9%96%8B%E5%A7%8B%E5%BB%BA%E7%AB%8BHEXO-%E5%A5%97%E7%94%A8Butterfly%E4%B8%BB%E9%A1%8C-%E5%80%8B%E4%BA%BABlog/" title="從0開始建立HEXO-套用Butterfly主題-個人Blog">從0開始建立HEXO-套用Butterfly主題-個人Blog</a><time datetime="2022-10-30T16:00:00.000Z" title="發表於 2022-10-31 00:00:00">2022-10-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/10/30/%E5%A6%82%E4%BD%95%E5%9C%A8HEXO%E4%B8%8A%E9%9D%A2-%E6%8F%92%E5%85%A5CodePen%E5%8D%80%E5%A1%8A/" title="如何在HEXO上面-插入CodePen區塊">如何在HEXO上面-插入CodePen區塊</a><time datetime="2022-10-29T16:00:00.000Z" title="發表於 2022-10-30 00:00:00">2022-10-30</time></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(166deg, rgba(0,0,0,1) 13%, rgba(19,37,45,1) 30%, rgba(16,64,85,1) 43%, rgba(16,71,96,1) 49%, rgba(18,67,90,1) 56%, rgba(30,44,51,1) 71%, rgba(1,1,1,1) 92%)"><div id="footer-wrap"><div class="copyright">&copy;2022 By Xuan</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">如果我們註定不能一帆風順 那就一起乘風破浪吧٩(๑•̀ω•́๑)۶</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到頂部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜尋</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  資料庫載入中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜尋文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
