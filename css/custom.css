@@ -12,6 +12,12 @@
 } */
 body {
   font-family: custom-pixel;
+  /*鼠標指針樣式*/ 
+  cursor: url( https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur ),default;
+}
+/*鼠標鏈接小手樣式*/
+a , img{
+  cursor: url( https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur ), default;
 }
 
 /* 文章頁H1-H6圖標樣式效果 */
@@ -89,3 +95,5 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
 #rightside_config i.fas.fa-cog.fa-spin {
   animation: fa-spin 3.2s linear infinite ;
 }
+
+
