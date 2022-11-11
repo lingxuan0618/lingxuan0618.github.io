@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>一起來學習Markdown語法 | Xuan's Blog</title><meta name="author" content="Xuan"><meta name="copyright" content="Xuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="不管是用 Hexo 建立的 Blog 還是用來當筆記本的 HackMD 都是使用 Markdown 語法之前上的一個 python 共學營也是使用 Markdown 語法來編輯文章作業 XD 最近我有一個朋友也開始使用 HackMD 正在使用 Markdown 語法，所以來記錄一下，我自己常用的語法在分享給朋友 XD Markdown 文件   標題標題的話有6個階層，可以想成是 HTML 的 H">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一起來學習Markdown語法">
+<meta property="og:url" content="https://lingxuan0618.github.io/posts/37d11d5facf8/index.html">
+<meta property="og:site_name" content="Xuan&#39;s Blog">
+<meta property="og:description" content="不管是用 Hexo 建立的 Blog 還是用來當筆記本的 HackMD 都是使用 Markdown 語法之前上的一個 python 共學營也是使用 Markdown 語法來編輯文章作業 XD 最近我有一個朋友也開始使用 HackMD 正在使用 Markdown 語法，所以來記錄一下，我自己常用的語法在分享給朋友 XD Markdown 文件   標題標題的話有6個階層，可以想成是 HTML 的 H">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://lingxuan0618.github.io/img/xuan.png">
+<meta property="article:published_time" content="2022-11-10T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-11-11T14:10:58.596Z">
+<meta property="article:author" content="Xuan">
+<meta property="article:tag" content="Markdown">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lingxuan0618.github.io/img/xuan.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://lingxuan0618.github.io/posts/37d11d5facf8/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查詢的內容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '一起來學習Markdown語法',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-11-11 22:10:58'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/universe.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/xuan.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">8</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Xuan</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Xuan's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜尋</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Xuan</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">一起來學習Markdown語法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2022-11-10T16:00:00.000Z" title="發表於 2022-11-11 00:00:00">2022-11-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2022-11-11T14:10:58.596Z" title="更新於 2022-11-11 22:10:58">2022-11-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Markdown/">Markdown</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="一起來學習Markdown語法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">閱讀量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><p>不管是用 Hexo 建立的 Blog 還是用來當筆記本的 HackMD 都是使用 Markdown 語法<br>之前上的一個 python 共學營也是使用 Markdown 語法來編輯文章作業 XD</p>
+<p>最近我有一個朋友也開始使用 HackMD 正在使用 Markdown 語法，所以來記錄一下，我自己常用的語法在分享給朋友 XD</p>
+<div class="note blue icon-padding disabled"><i class="note-icon fas fa-hand-point-right"></i><p><a target="_blank" rel="noopener" href="https://markdown.tw/">Markdown 文件</a></p>
+</div>
+
+<h2 id="標題"><a href="#標題" class="headerlink" title="標題"></a>標題</h2><p>標題的話有6個階層，可以想成是 HTML 的 H1 ~ H6</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># H1標題</span></span><br><span class="line"><span class="section">## H2標題</span></span><br><span class="line"><span class="section">### H3標題</span></span><br><span class="line"><span class="section">#### H4標題</span></span><br><span class="line"><span class="section">##### H5標題</span></span><br><span class="line"><span class="section">###### H6標題</span></span><br></pre></td></tr></table></figure>
+<div class="note blue icon-padding disabled"><i class="note-icon fas fa-hand-point-down"></i><p>效果圖</p>
+</div>
+<h1 id="H1標題"><a href="#H1標題" class="headerlink" title="H1標題"></a>H1標題</h1><h2 id="H2標題"><a href="#H2標題" class="headerlink" title="H2標題"></a>H2標題</h2><h3 id="H3標題"><a href="#H3標題" class="headerlink" title="H3標題"></a>H3標題</h3><h4 id="H4標題"><a href="#H4標題" class="headerlink" title="H4標題"></a>H4標題</h4><h5 id="H5標題"><a href="#H5標題" class="headerlink" title="H5標題"></a>H5標題</h5><h6 id="H6標題"><a href="#H6標題" class="headerlink" title="H6標題"></a>H6標題</h6><h2 id="清單"><a href="#清單" class="headerlink" title="清單"></a>清單</h2><h3 id="無序清單"><a href="#無序清單" class="headerlink" title="無序清單"></a>無序清單</h3><p>使用 * + - 這三個符號的效果是一樣的</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">*</span> 清單一</span><br><span class="line"><span class="bullet">*</span> 清單二</span><br><span class="line"><span class="bullet">*</span> 清單三</span><br><span class="line"></span><br><span class="line"><span class="bullet">+</span> 清單四</span><br><span class="line"><span class="bullet">+</span> 清單五</span><br><span class="line"><span class="bullet">+</span> 清單六</span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> 清單七</span><br><span class="line"><span class="bullet">-</span> 清單八</span><br><span class="line"><span class="bullet">-</span> 清單九</span><br></pre></td></tr></table></figure>
+
+<div class="note blue icon-padding disabled"><i class="note-icon fas fa-hand-point-down"></i><p>效果圖</p>
+</div>
+
+<ul>
+<li>清單一</li>
+<li>清單二</li>
+<li>清單三</li>
+</ul>
+<ul>
+<li>清單四</li>
+<li>清單五</li>
+<li>清單六</li>
+</ul>
+<ul>
+<li>清單七</li>
+<li>清單八</li>
+<li>清單九</li>
+</ul>
+<h3 id="有序清單"><a href="#有序清單" class="headerlink" title="有序清單"></a>有序清單</h3><p>因為有序清單在Html輸出都是<code>&lt;ol&gt;&lt;/ol&gt;</code>標籤，所以有序的數字不影響實際上的排序</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> 清單一</span><br><span class="line"><span class="bullet">2.</span> 清單二</span><br><span class="line"><span class="bullet">3.</span> 清單三</span><br><span class="line"></span><br><span class="line"><span class="bullet">4.</span> 清單四</span><br><span class="line"><span class="bullet">6.</span> 清單六</span><br><span class="line"><span class="bullet">9.</span> 清單九</span><br></pre></td></tr></table></figure>
+
+<div class="note blue icon-padding disabled"><i class="note-icon fas fa-hand-point-down"></i><p>效果圖</p>
+</div>
+
+<ol>
+<li><p>清單一</p>
+</li>
+<li><p>清單二</p>
+</li>
+<li><p>清單三</p>
+</li>
+<li><p>清單四</p>
+</li>
+<li><p>清單六</p>
+</li>
+<li><p>清單九</p>
+</li>
+</ol>
+<h2 id="圖片"><a href="#圖片" class="headerlink" title="圖片"></a>圖片</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">Img敘述</span>](<span class="link">imgurl</span>)</span><br></pre></td></tr></table></figure>
+
+<div class="note blue icon-padding disabled"><i class="note-icon fas fa-hand-point-down"></i><p>效果圖</p>
+</div>
+
+<p><img src="https://imgur.com/F4uK6hy.png]" alt="Img敘述"></p>
+<h2 id="超連結"><a href="#超連結" class="headerlink" title="超連結"></a>超連結</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">顯示的敘述</span>](<span class="link">url</span>)</span><br></pre></td></tr></table></figure>
+
+<div class="note blue icon-padding disabled"><i class="note-icon fas fa-hand-point-down"></i><p>效果圖</p>
+</div>
+
+<p><a href="https://lingxuan0618.github.io/">Xuan’s Blog</a></p>
+<h2 id="水平線"><a href="#水平線" class="headerlink" title="水平線"></a>水平線</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<div class="note blue icon-padding disabled"><i class="note-icon fas fa-hand-point-down"></i><p>效果圖</p>
+</div>
+
+<hr>
+<h2 id="表格-Table"><a href="#表格-Table" class="headerlink" title="表格(Table)"></a>表格(Table)</h2><p>表格沒對齊，也沒關係的</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| thead 1 | thead 2 | tread 3 |</span><br><span class="line">|---------|---------|---------|</span><br><span class="line">| td      | td      | td      |</span><br><span class="line">| td      | td   | td    |</span><br></pre></td></tr></table></figure>
+
+<div class="note blue icon-padding disabled"><i class="note-icon fas fa-hand-point-down"></i><p>效果圖</p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>thead 1</th>
+<th>thead 2</th>
+<th>tread 3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>td</td>
+<td>td</td>
+<td>td</td>
+</tr>
+<tr>
+<td>td</td>
+<td>td</td>
+<td>td</td>
+</tr>
+</tbody></table>
+<h2 id="程式碼區塊"><a href="#程式碼區塊" class="headerlink" title="程式碼區塊"></a>程式碼區塊</h2><h3 id="行內程式碼"><a href="#行內程式碼" class="headerlink" title="行內程式碼"></a>行內程式碼</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我是<span class="code">``` 行內程式碼 ```</span></span><br></pre></td></tr></table></figure>
+
+<div class="note blue icon-padding disabled"><i class="note-icon fas fa-hand-point-down"></i><p>效果圖</p>
+</div>
+
+<p>我是<code>行內程式碼</code></p>
+<h3 id="多行"><a href="#多行" class="headerlink" title="多行"></a>多行</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">3個` 打上想要顯示的語言(要有被支援的語言, EX:Markdown)</span><br><span class="line">程式碼區塊</span><br><span class="line">3個`</span><br></pre></td></tr></table></figure>
+<div class="note blue icon-padding disabled"><i class="note-icon fas fa-hand-point-down"></i><p>效果圖</p>
+</div>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">程式碼區塊</span><br></pre></td></tr></table></figure>
+
+<h2 id="給文字顏色"><a href="#給文字顏色" class="headerlink" title="給文字顏色"></a>給文字顏色</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;#2894FF&quot;</span>&gt;</span></span> 我是藍色<span class="language-xml"><span class="tag">&lt;/<span class="name">font</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;#FFFF93&quot;</span>&gt;</span></span> 我是黃色<span class="language-xml"><span class="tag">&lt;/<span class="name">font</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<div class="note blue icon-padding disabled"><i class="note-icon fas fa-hand-point-down"></i><p>效果圖</p>
+</div>
+
+<p><font color="#2894FF"> 我是藍色</font><br><font color="#FFFF93"> 我是黃色</font></p>
+<hr>
+<p>稍微紀錄常用的Markdown語法，不過在Blog上的跟在HackMD上的有些效果還是不太一樣<br>但語法都是一樣的啦，之後有想到什麼再繼續補充</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://lingxuan0618.github.io">Xuan</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章連結: </span><span class="post-copyright-info"><a href="https://lingxuan0618.github.io/posts/37d11d5facf8/">https://lingxuan0618.github.io/posts/37d11d5facf8/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版權聲明: </span><span class="post-copyright-info">本部落格所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 許可協議。轉載請註明來自 <a href="https://lingxuan0618.github.io" target="_blank">Xuan's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Markdown/">Markdown</a></div><div class="post_share"><div class="social-share" data-image="/img/xuan.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/posts/9b760891259f/"><img class="prev-cover" src="/img/xuan.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">第一次建立Vite專案(UI框架使用Tailwind)</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/xuan.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Xuan</div><div class="author-info__description">Everything Will Be Fine(๑•̀ω•́)</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/lingxuan0618"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%99%E9%A1%8C"><span class="toc-number">1.</span> <span class="toc-text">標題</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#H1%E6%A8%99%E9%A1%8C"><span class="toc-number"></span> <span class="toc-text">H1標題</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#H2%E6%A8%99%E9%A1%8C"><span class="toc-number">1.</span> <span class="toc-text">H2標題</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#H3%E6%A8%99%E9%A1%8C"><span class="toc-number">1.1.</span> <span class="toc-text">H3標題</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#H4%E6%A8%99%E9%A1%8C"><span class="toc-number">1.1.1.</span> <span class="toc-text">H4標題</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#H5%E6%A8%99%E9%A1%8C"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">H5標題</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#H6%E6%A8%99%E9%A1%8C"><span class="toc-number">1.1.1.1.1.</span> <span class="toc-text">H6標題</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%85%E5%96%AE"><span class="toc-number">2.</span> <span class="toc-text">清單</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%84%A1%E5%BA%8F%E6%B8%85%E5%96%AE"><span class="toc-number">2.1.</span> <span class="toc-text">無序清單</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E6%B8%85%E5%96%AE"><span class="toc-number">2.2.</span> <span class="toc-text">有序清單</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%96%E7%89%87"><span class="toc-number">3.</span> <span class="toc-text">圖片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B6%85%E9%80%A3%E7%B5%90"><span class="toc-number">4.</span> <span class="toc-text">超連結</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E7%B7%9A"><span class="toc-number">5.</span> <span class="toc-text">水平線</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC-Table"><span class="toc-number">6.</span> <span class="toc-text">表格(Table)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A8%8B%E5%BC%8F%E7%A2%BC%E5%8D%80%E5%A1%8A"><span class="toc-number">7.</span> <span class="toc-text">程式碼區塊</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%8C%E5%85%A7%E7%A8%8B%E5%BC%8F%E7%A2%BC"><span class="toc-number">7.1.</span> <span class="toc-text">行內程式碼</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%A1%8C"><span class="toc-number">7.2.</span> <span class="toc-text">多行</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B5%A6%E6%96%87%E5%AD%97%E9%A1%8F%E8%89%B2"><span class="toc-number">8.</span> <span class="toc-text">給文字顏色</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/37d11d5facf8/" title="一起來學習Markdown語法">一起來學習Markdown語法</a><time datetime="2022-11-10T16:00:00.000Z" title="發表於 2022-11-11 00:00:00">2022-11-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/9b760891259f/" title="第一次建立Vite專案(UI框架使用Tailwind)">第一次建立Vite專案(UI框架使用Tailwind)</a><time datetime="2022-11-06T16:00:00.000Z" title="發表於 2022-11-07 00:00:00">2022-11-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/0aa4220ee0fb/" title="前端上傳前預覽圖片">前端上傳前預覽圖片</a><time datetime="2022-11-04T16:00:00.000Z" title="發表於 2022-11-05 00:00:00">2022-11-05</time></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(166deg, rgba(0,0,0,1) 13%, rgba(19,37,45,1) 30%, rgba(16,64,85,1) 43%, rgba(16,71,96,1) 49%, rgba(18,67,90,1) 56%, rgba(30,44,51,1) 71%, rgba(1,1,1,1) 92%)"><div id="footer-wrap"><div class="copyright">&copy;2022 By Xuan</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">如果我們註定不能一帆風順 那就一起乘風破浪吧٩(๑•̀ω•́๑)۶</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到頂部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜尋</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  資料庫載入中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜尋文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
