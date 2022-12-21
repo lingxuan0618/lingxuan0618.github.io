@@ -4,11 +4,40 @@
   
     
     <entry>
+      <title>JavaScript,無所畏懼-運算子</title>
+      <link href="/posts/c58453f5b694/"/>
+      <url>/posts/c58453f5b694/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>昨天介紹在開發環境很好用的console.log()方法<br>今天要來介紹運算子!<br>不過就先介紹我在這段時間比較常用到的運算子<br>其餘的可以看這篇<a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Expressions_and_Operators">MDN-運算式與運算子</a></p></div><h3 id="運算子"><a href="#運算子" class="headerlink" title="運算子"></a>運算子</h3><ul><li>賦值運算子</li><li>比較運算子</li><li>算術運算子</li><li>邏輯運算子</li><li>運算元</li></ul><h4 id="回憶過去"><a href="#回憶過去" class="headerlink" title="回憶過去"></a>回憶過去</h4><div class="note green icon-padding simple"><i class="note-icon far fa-grin-squint-tears"></i><p>還記得之前都被&amp;&amp; || 搞得暈頭轉向<br>有時候不小心有多條件的時候還會會錯意XD<br>尤其是相等根部相等的多條件加在一起<br>有時候都會非預期呢</p></div> <h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Expressions_and_Operators">MDN-運算式與運算子</a><br><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的作用域!</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> FrontEnd </category>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> FrontEnd </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript,無所畏懼-console.log()</title>
       <link href="/posts/90d1fc690d88/"/>
       <url>/posts/90d1fc690d88/</url>
       
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>今天下班跟同事去打了羽球XD<br>這一季的倒數第二次<br>不過有同事換揪星期六下午打哈哈到時候再++</p><p>今天要來分享可以在瀏覽器的Console區塊把結果或者值印出來查看的console.log()方法!</p></div><h3 id="Console的其他用法"><a href="#Console的其他用法" class="headerlink" title="Console的其他用法"></a>Console的其他用法</h3><ul><li>console.table()</li><li>console.group()</li><li>console.time()</li><li>console.assert()</li><li>console.trace()</li><li>console.dir()</li><li>console.count()</li><li>console.clear()</li><li>console.profile()</li></ul><h4 id="回憶過去"><a href="#回憶過去" class="headerlink" title="回憶過去"></a>回憶過去</h4><div class="note green icon-padding simple"><i class="note-icon far fa-grin-squint-tears"></i><p>之前開發的時候，有時候都忘記要使用console.log()一行一行去看我得到的值是什麼，<br>都會直接從畫面上看，怎麼跟預期的不一樣XD<br>後來看前輩幫忙我debug都會用console.log()看一下是發生了什麼事情，<br>漸漸的我也有了這個習慣哈哈</p></div> <h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://codelove.tw/@tony/post/gqBQa7?fbclid=IwAR1C6TZ4OWv72PQ4q1Kb1rJoAO3882cm_-cGcZrIRB1u7_bvg2dT3qvOYnY">都要 2023 年了還在用 console.log 嗎？來看看 10 個 console 進階用法！</a><br><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的作用域!</p></div>]]></content>
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>今天下班跟同事去打了羽球XD<br>這一季的倒數第二次<br>不過有同事換揪星期六下午打哈哈到時候再++</p><p>今天要來分享可以在瀏覽器的Console區塊把結果或者值印出來查看的console.log()方法!</p></div><h3 id="Console的其他用法"><a href="#Console的其他用法" class="headerlink" title="Console的其他用法"></a>Console的其他用法</h3><ul><li>console.table()</li><li>console.group()</li><li>console.time()</li><li>console.assert()</li><li>console.trace()</li><li>console.dir()</li><li>console.count()</li><li>console.clear()</li><li>console.profile()</li></ul><h4 id="回憶過去"><a href="#回憶過去" class="headerlink" title="回憶過去"></a>回憶過去</h4><div class="note green icon-padding simple"><i class="note-icon far fa-grin-squint-tears"></i><p>之前開發的時候，有時候都忘記要使用console.log()一行一行去看我得到的值是什麼，<br>都會直接從畫面上看，怎麼跟預期的不一樣XD<br>後來看前輩幫忙我debug都會用console.log()看一下是發生了什麼事情，<br>漸漸的我也會提醒自己發生非預期的結果時，可以用console看一下哈</p></div> <h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://codelove.tw/@tony/post/gqBQa7?fbclid=IwAR1C6TZ4OWv72PQ4q1Kb1rJoAO3882cm_-cGcZrIRB1u7_bvg2dT3qvOYnY">都要 2023 年了還在用 console.log 嗎？來看看 10 個 console 進階用法！</a><br><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的運算子!</p></div>]]></content>
       
       
       <categories>
