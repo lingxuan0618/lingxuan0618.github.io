@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>JavaScript,無所畏懼-作用域鍊</title>
+      <link href="/posts/e7c77769b017/"/>
+      <url>/posts/e7c77769b017/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-candy-cane"></i><p>今天為了新廠的網路到處奔波…還好網路的廠商人滿好的，跟我分享很多一些網路線的相關知識<br>昨天介紹了作用域，今天要來說明作用域鍊!</p></div><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的提升現象</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> FrontEnd </category>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> FrontEnd </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript,無所畏懼-作用域</title>
       <link href="/posts/9f25161904cb/"/>
       <url>/posts/9f25161904cb/</url>
