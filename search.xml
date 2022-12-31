@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>JavaScript,無所畏懼-箭頭函式</title>
+      <link href="/posts/61847b0c0cf1/"/>
+      <url>/posts/61847b0c0cf1/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-candy-cane"></i><p>終於來到2022年的最後一天XD<br>這一年可以說是亂糟糟，但也好好思考人生的一年<br>願2023年我喜歡的人以及我喜歡的人都能幸福快樂啦!<br>也祝福自己2023可以一切都好<br>昨天講了立即執行函式<br>今天要來說明箭頭函式!</p></div><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>2023的第一天要介紹JavaScript的回呼函式</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> FrontEnd </category>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> FrontEnd </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript,無所畏懼-立即執行函式</title>
       <link href="/posts/31eff4d1eef6/"/>
       <url>/posts/31eff4d1eef6/</url>
