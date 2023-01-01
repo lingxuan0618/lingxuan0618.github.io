@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>JavaScript,無所畏懼-回呼函式</title>
+      <link href="/posts/185dbf0c2f2f/"/>
+      <url>/posts/185dbf0c2f2f/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-candy-cane"></i><p>2023的第一天 昏昏沉沉的 一直想睡覺XD<br>昨天講了箭頭函式<br>今天要來說明回呼函式!</p></div><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript函式的閉包</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> FrontEnd </category>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> FrontEnd </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript,無所畏懼-箭頭函式</title>
       <link href="/posts/61847b0c0cf1/"/>
       <url>/posts/61847b0c0cf1/</url>
