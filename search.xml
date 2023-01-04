@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>JavaScript,無所畏懼-同步與非同步</title>
+      <link href="/posts/69cfb9d7d4ee/"/>
+      <url>/posts/69cfb9d7d4ee/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>昨天講了其餘參數跟展開運算子<br>今天要來說明同步與非同步!</p></div><h3 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h3><p><code>執行完一件事情之後，在做下一件事情，意即一次只能做一件事情</code></p><p>今天Joey餐館開幕了!<br>今天一早起床，Joey就開始做很多準備，以下是他要做的事情以及預估需要的時間</p><table><thead><tr><th>事項</th><th>時間</th></tr></thead><tbody><tr><td>醃漬肉品</td><td>1小時</td></tr><tr><td>切菜&#x2F;洗菜</td><td>30分鐘</td></tr><tr><td>把水煮沸準備料理</td><td>20分鐘</td></tr></tbody></table><p>如果是同步的方式，那Joey必須花費<br>醃漬肉品(40分鐘) -&gt; 切菜&#x2F;洗菜(30分鐘) -&gt; 把水煮沸準備料理(20分鐘)<br>總共1小時30分鐘</p><hr><h3 id="非同步"><a href="#非同步" class="headerlink" title="非同步"></a>非同步</h3><p><code>一段時間內可以處理多件事情</code>，但並不是同時進行</p><table><thead><tr><th>事項</th><th>時間</th></tr></thead><tbody><tr><td>醃漬肉品</td><td>40分鐘</td></tr><tr><td>切菜&#x2F;洗菜</td><td>30分鐘</td></tr><tr><td>把水煮沸準備料理</td><td>20分鐘</td></tr></tbody></table><p>如果是透過非同步的方式，Joey可以在醃漬肉品等待的時間，並把火開下去讓水煮沸，接著專心洗菜跟切菜<br>-&gt; 醃漬肉品(40分鐘)<br>-&gt; 切菜&#x2F;洗菜(30分鐘)<br>-&gt; 把水煮沸準備料理(20分鐘)<br>大約40分鐘</p><hr><div class="note blue icon-padding simple"><i class="note-icon fas fa-feather"></i><p>JavaScript本身是<code>單執行緒的語言</code>，所有程式碼都需要依序執行完畢</p><p>但我們平常執行JavaScript是在瀏覽器上，瀏覽器有提供許多Web API讓我們呼叫，JS本身同步的時間線會跟Web API是不同的時間線，所以他們之間可以互相溝通，達到非同步的效果</p></div> <hr><h4 id="回憶過去"><a href="#回憶過去" class="headerlink" title="回憶過去"></a>回憶過去</h4><div class="note green icon-padding simple"><i class="note-icon far fa-grin-squint-tears"></i><p>還記得第一次聽到同步跟非同步的時候，我真的是黑人問號XD<br>想說啥，不是所有東西應該都要同步嗎?為什麼可以非同步，這樣不會有問題嗎?<br>但後來前輩跟我解釋了，使用者使用網頁的時候，如果都用同步的使用者體驗會不好，出現一整片白色或者要等非常非常久，所以才有了非同步的技術(Ajax)，我才漸漸開始對同步跟非同步有初步的了解</p></div> <hr><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a><br><a href="https://chanchandev.com/js/Async/async-sync-intro/2534378084/">Javascript 非同步 &amp; Event Loop！10 分鐘輕鬆圖解學習！</a><br><a href="https://medium.com/itsems-frontend/javascript-sync-async-22e75e1ca1dc">[JavaScript] 一次搞懂同步與非同步的一切：一次做幾件事情 — 同步(Sync)與非同步(Async)</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的Event Queue</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> FrontEnd </category>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> FrontEnd </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript,無所畏懼-其餘參數與展開運算子</title>
       <link href="/posts/739f52684d14/"/>
       <url>/posts/739f52684d14/</url>
