@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>JavaScript,無所畏懼-Event Queue</title>
+      <link href="/posts/b51adcef580b/"/>
+      <url>/posts/b51adcef580b/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>昨天講了同步與非同步<br>今天要來說明Event Queue!</p></div><h3 id="Event-Queue"><a href="#Event-Queue" class="headerlink" title="Event Queue"></a>Event Queue</h3><h3 id="Event-Queue運行流程"><a href="#Event-Queue運行流程" class="headerlink" title="Event Queue運行流程"></a>Event Queue運行流程</h3><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的Event Loop</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> FrontEnd </category>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> FrontEnd </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript,無所畏懼-同步與非同步</title>
       <link href="/posts/69cfb9d7d4ee/"/>
       <url>/posts/69cfb9d7d4ee/</url>
@@ -153,7 +182,7 @@
       <link href="/posts/31eff4d1eef6/"/>
       <url>/posts/31eff4d1eef6/</url>
       
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>終於來到2022年的最後一個工作日，終於結束忙碌的一週…<br>昨天講了函式陳述式及表達式<br>今天要來說明立即執行函式!</p></div><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的箭頭函式</p></div>]]></content>
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>終於來到2022年的最後一個工作日，終於結束忙碌的一週…<br>昨天講了函式陳述式及表達式<br>今天要來說明立即執行函式!</p></div><h3 id="立即執行函式-Immediately-Invoked-Functions-Expressions"><a href="#立即執行函式-Immediately-Invoked-Functions-Expressions" class="headerlink" title="立即執行函式(Immediately Invoked Functions Expressions)"></a>立即執行函式(Immediately Invoked Functions Expressions)</h3><p><code>在函式被創造之後馬上執行</code></p><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a><br><a href="https://ithelp.ithome.com.tw/articles/10193313">Day20　立即呼叫的函式表示式(IIFE)</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的箭頭函式</p></div>]]></content>
       
       
       <categories>
@@ -182,7 +211,7 @@
       <link href="/posts/c8c08c4e4a9a/"/>
       <url>/posts/c8c08c4e4a9a/</url>
       
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>今天又是整個累到不行ㄉ一天，不過這大概就是遷廠ㄉ樂趣了吧XD<br>昨天講了函式基礎<br>今天要來說明函式陳述式及表達式!</p></div><h3 id="陳述式"><a href="#陳述式" class="headerlink" title="陳述式"></a>陳述式</h3><p>常見的陳述式有</p><ul><li>if&#x2F;switch判斷式</li><li>for &#x2F; while迴圈</li><li>變數宣告</li><li>一般函式宣告</li></ul><h3 id="表達式"><a href="#表達式" class="headerlink" title="表達式"></a>表達式</h3><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a><br><a href="https://www.casper.tw/development/2020/09/17/js-expression/">JavaScript 表達式觀念及運用 - JS Expression</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的立即執行函式</p></div>]]></content>
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>今天又是整個累到不行ㄉ一天，不過這大概就是遷廠ㄉ樂趣了吧XD<br>昨天講了函式基礎<br>今天要來說明函式陳述式及表達式!</p></div><table><thead><tr><th>項目</th><th>敘述</th></tr></thead><tbody><tr><td>陳述式</td><td>一種聲明、或是對邏輯的描寫，<code>不會回傳結果</code></td></tr><tr><td>表達式</td><td>是一段能被js運算並<code>會回傳結果</code>的程式碼</td></tr></tbody></table><h3 id="陳述式"><a href="#陳述式" class="headerlink" title="陳述式"></a>陳述式</h3><p>常見的陳述式有</p><ul><li>if&#x2F;switch判斷式</li><li>for &#x2F; while迴圈</li><li>變數宣告</li><li>一般函式宣告</li></ul><p>舉例:</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> weather;</span><br></pre></td></tr></table></figure><h3 id="表達式"><a href="#表達式" class="headerlink" title="表達式"></a>表達式</h3><p>常見的表達式有</p><ul><li>純值</li><li>變數</li><li>運算子</li><li>執行函式</li><li>正規表達式</li><li>函式表達式</li></ul><p>舉例:</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">weather = <span class="string">&#x27;sunny&#x27;</span>;</span><br><span class="line"><span class="number">1</span> + <span class="number">3</span>;</span><br><span class="line">x === <span class="number">5</span>;</span><br><span class="line"><span class="literal">true</span> || <span class="literal">false</span>;</span><br></pre></td></tr></table></figure><hr><h3 id="函式陳述式"><a href="#函式陳述式" class="headerlink" title="函式陳述式"></a>函式陳述式</h3><h3 id="函式表達式"><a href="#函式表達式" class="headerlink" title="函式表達式"></a>函式表達式</h3><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a><br><a href="https://www.casper.tw/development/2020/09/17/js-expression/">JavaScript 表達式觀念及運用 - JS Expression</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的立即執行函式</p></div>]]></content>
       
       
       <categories>
