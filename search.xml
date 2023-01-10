@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>JavaScript,無所畏懼-Promise物件</title>
-      <link href="/posts/1524c6838ccd/"/>
-      <url>/posts/1524c6838ccd/</url>
+      <title>JavaScript,無所畏懼-物件</title>
+      <link href="/posts/b7bf9143336a/"/>
+      <url>/posts/b7bf9143336a/</url>
       
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>昨天講了簡介以及基本使用方法<br>今天要來說明Promise物件!</p></div><h3 id="Promise簡介"><a href="#Promise簡介" class="headerlink" title="Promise簡介"></a>Promise簡介</h3><h3 id="Promise基本使用方法"><a href="#Promise基本使用方法" class="headerlink" title="Promise基本使用方法"></a>Promise基本使用方法</h3><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的Async&#x2F;Await</p></div>]]></content>
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>昨天講了Async&#x2F;Await<br>今天要來說明物件的創造方式!</p></div><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript物件的存取物件內容</p></div>]]></content>
       
       
       <categories>
@@ -34,10 +34,39 @@
     
     <entry>
       <title>JavaScript,無所畏懼-Async/Await</title>
-      <link href="/posts/f9ff258c23bf/"/>
-      <url>/posts/f9ff258c23bf/</url>
+      <link href="/posts/e05f253a8f37/"/>
+      <url>/posts/e05f253a8f37/</url>
       
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>昨天講了Promise物件<br>今天要來說明Async&#x2F;Await!</p></div><h3 id="Async"><a href="#Async" class="headerlink" title="Async"></a>Async</h3><h3 id="Await"><a href="#Await" class="headerlink" title="Await"></a>Await</h3><h3 id="Promise的錯誤處理"><a href="#Promise的錯誤處理" class="headerlink" title="Promise的錯誤處理"></a>Promise的錯誤處理</h3><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的Async&#x2F;Await</p></div>]]></content>
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>昨天講了Promise物件<br>今天要來說明Async&#x2F;Await!</p></div><h3 id="Async"><a href="#Async" class="headerlink" title="Async"></a>Async</h3><h3 id="Await"><a href="#Await" class="headerlink" title="Await"></a>Await</h3><h3 id="Promise的錯誤處理"><a href="#Promise的錯誤處理" class="headerlink" title="Promise的錯誤處理"></a>Promise的錯誤處理</h3><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript物件的創造方式</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> FrontEnd </category>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> FrontEnd </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JavaScript,無所畏懼-Promise物件</title>
+      <link href="/posts/1524c6838ccd/"/>
+      <url>/posts/1524c6838ccd/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>昨天講了簡介以及基本使用方法<br>今天要來說明Promise物件!</p></div><h3 id="Promise簡介"><a href="#Promise簡介" class="headerlink" title="Promise簡介"></a>Promise簡介</h3><h3 id="Promise基本使用方法"><a href="#Promise基本使用方法" class="headerlink" title="Promise基本使用方法"></a>Promise基本使用方法</h3><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的Async&#x2F;Await</p></div>]]></content>
       
       
       <categories>
@@ -381,11 +410,11 @@
     
     
     <entry>
-      <title>JavaScript,無所畏懼-提升現象</title>
+      <title>JavaScript,無所畏懼-提升現象(Hoisting)</title>
       <link href="/posts/0ec0279a2e91/"/>
       <url>/posts/0ec0279a2e91/</url>
       
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>今天是這一季最後一次羽球社團的活動XD<br>昨天講了作用域鍊<br>今天要來說明提升現象(Hoisting)!</p></div><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的函式基礎</p></div>]]></content>
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>今天是這一季最後一次羽球社團的活動XD<br>昨天講了作用域鍊<br>今天要來說明提升現象(Hoisting)!</p></div><h2 id="提升現象-Hoisting"><a href="#提升現象-Hoisting" class="headerlink" title="提升現象(Hoisting)"></a>提升現象(Hoisting)</h2><p>如果我們在JavaScript寫以下程式碼，會出現<code>weather is not defined</code>的錯誤，是因為尚未宣告變數，所以JavaScript也不知道怎麼辦</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(weather);</span><br><span class="line"><span class="comment">//Uncaught ReferenceError: weather is not defined</span></span><br></pre></td></tr></table></figure><p>但是如果我們改成以下程式碼，會發現這次console.log(weather);會是undefined!<br>明明程式碼不是由上往下一行一行執行的嗎?不是應該也像上面的程式碼一樣報錯才對嗎?</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(weather); <span class="comment">//undefined</span></span><br><span class="line"><span class="keyword">var</span> weather;</span><br></pre></td></tr></table></figure><p>這種現象就叫做提升現象(hoisting)，提升，在第二行的var weather因為某種原因被<code>提升</code>到了最上面，所以上面的程式碼可以<code>想像</code>成這樣：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> weather;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(weather); <span class="comment">//undefined</span></span><br></pre></td></tr></table></figure><h3 id="為什麼說是想像呢"><a href="#為什麼說是想像呢" class="headerlink" title="為什麼說是想像呢"></a>為什麼說是想像呢</h3><p>程式碼並沒有真的被移動到最上方做宣告!<br>還記得之前在<a href="https://lingxuan0618.github.io/posts/052b19cc24b3/">JavaScript,無所畏懼-執行環境</a><br>這篇文章提過，全域環境產生之後會做幾件事情</p><ol><li>創建全域環境(全域物件)(以web來說就是建立一個Window)</li><li>創建一個<code>this</code>變數</li><li>進行記憶體指派<br>而<code>記憶體指派</code>就是關鍵</li></ol><p>JavaScript逐行執行程式碼之前，它看見即將宣告一個變數，雖然不知道內如是什麼，但JavaScript會先保留一個記憶體空間，在這個階段中，JavaScript還會做幾件事情</p><ul><li>會為宣告的變數保留記憶體空間，但不會賦予程式碼值，以var宣告變數為例，只會給訂初值undefined</li><li>若使用function宣告的具名函式，除了保留函式名稱的宣告，也會將整個函式內容存入記憶體空間，因此我們才可以在宣告函式區塊之前呼叫函式!</li></ul><hr><h3 id="變數宣告會被提升，但賦值不會"><a href="#變數宣告會被提升，但賦值不會" class="headerlink" title="變數宣告會被提升，但賦值不會"></a>變數宣告會被提升，但賦值不會</h3><p>如果今天我們直接宣告weather並賦予值，會發現在宣告之前，印出weather，會出現undefined</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(weather); <span class="comment">//undefined</span></span><br><span class="line"><span class="keyword">var</span> weather = <span class="string">&#x27;Sunny&#x27;</span>;</span><br></pre></td></tr></table></figure><p>上面的程式碼可以<code>想像</code>成是這樣：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> weather;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(weather); <span class="comment">//undefined</span></span><br><span class="line">weather = <span class="string">&#x27;Sunny&#x27;</span>; <span class="comment">// 值並沒有被提升</span></span><br></pre></td></tr></table></figure><hr><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a><br><a href="https://jianline.com/javascript-hoisting/">[筆記]-JavaScript 提升(Hoisting)是什麼?關於提升的5個觀念</a><br><a href="https://blog.techbridge.cc/2018/11/10/javascript-hoisting/">我知道你懂 hoisting，可是你了解到多深？</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的函式基礎</p></div>]]></content>
       
       
       <categories>
@@ -501,7 +530,7 @@
       <link href="/posts/052b19cc24b3/"/>
       <url>/posts/052b19cc24b3/</url>
       
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>夥伴今天確診了QQ<br>希望關關難過關關過囉!<br>昨天講完了條件判斷跟迴圈<br>今天要來記錄執行環境!</p></div><h3 id="執行環境"><a href="#執行環境" class="headerlink" title="執行環境"></a>執行環境</h3><p>任何JS程式碼被執行、讀取的地方，Ex:函式</p><ul><li>全域執行環境(Global Execution Context)</li><li>函式執行環境(Functional Execution Context)</li><li>eval函式內的執行環境</li></ul><hr><h4 id="全域執行環境-Global-Execution-Context"><a href="#全域執行環境-Global-Execution-Context" class="headerlink" title="全域執行環境(Global Execution Context)"></a>全域執行環境(Global Execution Context)</h4><p>-JavaScript 預設的執行環境，當JavaScript檔案被載入時，第一個進入的執行環境就是全域執行環境<br>全域執行環境內，執行環境會做幾件事情</p><ol><li>創建全域環境(全域物件)(以web來說就是建立一個Window)</li><li>創建一個<code>this</code>變數，並將其指向全域物件，可以在開發者工具打上this，會看見有一個全域物件Window<br><img src="https://imgur.com/9dNiHl4.png" alt="this"></li></ol><hr><h4 id="函式執行環境-Functional-Execution-Context"><a href="#函式執行環境-Functional-Execution-Context" class="headerlink" title="函式執行環境(Functional Execution Context)"></a>函式執行環境(Functional Execution Context)</h4><p>每個函式都有屬於自己的執行環境，當函式被呼叫的時候會產生，所以有多少個函式就會有多少個執行環境</p><ol><li>創建一個 <code>arguments object</code> 參數物件</li><li>創建一個<code>this</code>變數</li></ol><hr><h4 id="eval函式內的執行環境"><a href="#eval函式內的執行環境" class="headerlink" title="eval函式內的執行環境"></a>eval函式內的執行環境</h4><p>eval是JavaScript提供的一個預設方法，在eval函式內可以透過字串的方式去執行JavaScript程式碼，但現在eval函式不常被使用也不推薦使用<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/eval">MDN-eval()</a><br><a href="https://dev.to/amitkhonde/eval-is-evil-why-we-should-not-use-eval-in-javascript-1lbh">Eval is evil - Why we should not use eval in JavaScript</a></p><hr><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/eval">MDN-eval()</a><br><a href="https://dev.to/amitkhonde/eval-is-evil-why-we-should-not-use-eval-in-javascript-1lbh">Eval is evil - Why we should not use eval in JavaScript</a><br><a href="https://ithelp.ithome.com.tw/articles/10258787">JavaScript的執行階段: Execution Context</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的執行環境堆疊Σ(ﾟωﾟ)</p></div>]]></content>
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>夥伴今天確診了QQ<br>希望關關難過關關過囉!<br>昨天講完了條件判斷跟迴圈<br>今天要來記錄執行環境!</p></div><h3 id="執行環境"><a href="#執行環境" class="headerlink" title="執行環境"></a>執行環境</h3><p>任何JS程式碼被執行、讀取的地方，Ex:函式</p><ul><li>全域執行環境(Global Execution Context)</li><li>函式執行環境(Functional Execution Context)</li><li>eval函式內的執行環境</li></ul><hr><h4 id="全域執行環境-Global-Execution-Context"><a href="#全域執行環境-Global-Execution-Context" class="headerlink" title="全域執行環境(Global Execution Context)"></a>全域執行環境(Global Execution Context)</h4><p>-JavaScript 預設的執行環境，當JavaScript檔案被載入時，第一個進入的執行環境就是全域執行環境<br>全域執行環境內，執行環境會做幾件事情</p><ol><li>創建全域環境(全域物件)(以web來說就是建立一個Window)</li><li>創建一個<code>this</code>變數，並將其指向全域物件，可以在開發者工具打上this，會看見有一個全域物件Window<br><img src="https://imgur.com/9dNiHl4.png" alt="this"></li><li>進行記憶體指派</li></ol><hr><h4 id="函式執行環境-Functional-Execution-Context"><a href="#函式執行環境-Functional-Execution-Context" class="headerlink" title="函式執行環境(Functional Execution Context)"></a>函式執行環境(Functional Execution Context)</h4><p>每個函式都有屬於自己的執行環境，當函式被呼叫的時候會產生，所以有多少個函式就會有多少個執行環境</p><ol><li>創建一個 <code>arguments object</code> 參數物件</li><li>創建一個<code>this</code>變數</li></ol><hr><h4 id="eval函式內的執行環境"><a href="#eval函式內的執行環境" class="headerlink" title="eval函式內的執行環境"></a>eval函式內的執行環境</h4><p>eval是JavaScript提供的一個預設方法，在eval函式內可以透過字串的方式去執行JavaScript程式碼，但現在eval函式不常被使用也不推薦使用<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/eval">MDN-eval()</a><br><a href="https://dev.to/amitkhonde/eval-is-evil-why-we-should-not-use-eval-in-javascript-1lbh">Eval is evil - Why we should not use eval in JavaScript</a></p><hr><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/eval">MDN-eval()</a><br><a href="https://dev.to/amitkhonde/eval-is-evil-why-we-should-not-use-eval-in-javascript-1lbh">Eval is evil - Why we should not use eval in JavaScript</a><br><a href="https://ithelp.ithome.com.tw/articles/10258787">JavaScript的執行階段: Execution Context</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的執行環境堆疊Σ(ﾟωﾟ)</p></div>]]></content>
       
       
       <categories>
