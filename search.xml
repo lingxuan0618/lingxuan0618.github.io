@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>JavaScript,無所畏懼-原型繼承</title>
+      <link href="/posts/ac3198f522af/"/>
+      <url>/posts/ac3198f522af/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>今天是除夕夜啦!<br>每年的晚上的炸物都吃不完XD<br>放完煙火後，希望今年大家平安健康，一切順利啦!<br>昨天講了prototype屬性以及_proto_屬性!<br>今天要來說明原型繼承</p></div><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://www.books.com.tw/products/0010891408">JavaScript概念三明治：基礎觀念、語法原理一次帶走！（iT邦幫忙鐵人賽系列書）</a></p></div><hr><div class="note blue icon-padding disabled"><i class="note-icon far fa-paper-plane"></i><p>下一篇要介紹JavaScript的原型鍊</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> FrontEnd </category>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> FrontEnd </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript,無所畏懼-prototype屬性以及_proto_屬性</title>
       <link href="/posts/1eb92587acdb/"/>
       <url>/posts/1eb92587acdb/</url>
