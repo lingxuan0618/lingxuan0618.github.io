@@ -4,9 +4,98 @@
   
     
     <entry>
+      <title>Vue x 2048</title>
+      <link href="/posts/f44907debbad/"/>
+      <url>/posts/f44907debbad/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>待補</p></div><hr><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><h2 id="跟GPT對話慢慢產出的"><a href="#跟GPT對話慢慢產出的" class="headerlink" title="跟GPT對話慢慢產出的~~"></a>跟GPT對話慢慢產出的~~</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> FrontEnd </category>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> FrontEnd </tag>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Vue x Canvas實作畫板</title>
+      <link href="/posts/2aa1d76577ca/"/>
+      <url>/posts/2aa1d76577ca/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>雖然現在其實是2025年惹，但還是紀錄一下去年跟朋友分享的內容XD</p></div><p>待補</p><hr><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><h2 id="跟GPT對話慢慢產出的哈哈哈"><a href="#跟GPT對話慢慢產出的哈哈哈" class="headerlink" title="跟GPT對話慢慢產出的哈哈哈"></a>跟GPT對話慢慢產出的哈哈哈</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> FrontEnd </category>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> FrontEnd </tag>
+            
+            <tag> Vue </tag>
+            
+            <tag> Canvas </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SVG Tutorial</title>
+      <link href="/posts/a50cf8e856b0/"/>
+      <url>/posts/a50cf8e856b0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>待補</p></div><hr><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><h2 id="SVG-Tutorial"><a href="#SVG-Tutorial" class="headerlink" title="SVG Tutorial"></a><a href="https://svg-tutorial.com/">SVG Tutorial</a></h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> FrontEnd </category>
+          
+          <category> SVG </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> FrontEnd </tag>
+            
+            <tag> SVG </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Nuget套件 Offline安裝</title>
-      <link href="/posts/8c1336c0d5b6/"/>
-      <url>/posts/8c1336c0d5b6/</url>
+      <link href="/posts/d9746edd0709/"/>
+      <url>/posts/d9746edd0709/</url>
       
         <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>好久沒更新了XD</p><p>今天分享在工作上遇到客戶端沒有網路環境,但需要安裝Nuget套件該怎麼做<br>今天以NPOI套件為例</p></div><h3 id="原先做法-在本機端-有網路"><a href="#原先做法-在本機端-有網路" class="headerlink" title="原先做法-在本機端(有網路)"></a>原先做法-在本機端(有網路)</h3><ol><li><p>先到<a href="https://www.nuget.org/packages/NPOI">nuget官方網站-NPOI</a><br>右方的Download package下載NPOI的nupkg檔案</p></li><li><p>打開Visual Studio</p></li></ol><p>工具 ➜ Nuget套件管理員 ➜ 套件管理員設定<br><img src="https://imgur.com/0tEygCF.png" alt="步驟"></p><p>套件來源 ➜ 綠色加號 ➜ 把剛剛下載的npoi.2.6.0.nupkg放進一個資料夾之後,將來源選進來之後按確定<br><img src="https://imgur.com/etKM54W.png" alt="套件管理員設定"></p><p>工具 ➜ Nuget套件管理員 ➜ 管理方案的Nuget套件<br><img src="https://imgur.com/fJqvzKq.png" alt="管理方案的Nuget套件"></p><p>瀏覽 ➜ 右方套件來源 ➜ 選擇剛剛加入的NPOI來源<br><img src="https://imgur.com/WiN0oXd.png" alt="套件管理員設定"></p><p>選擇專案後安裝<br><img src="https://imgur.com/bRaZUyn.png" alt="安裝"></p><p>接著會看見會安裝跟NPOI有關的相依性套件<br><img src="https://imgur.com/qlfrZ6y.png" alt="下載相依套件"></p><p> 安裝成功後就可以使用啦!</p><h3 id="開心地將這個做法在客戶端執行"><a href="#開心地將這個做法在客戶端執行" class="headerlink" title="開心地將這個做法在客戶端執行"></a>開心地將這個做法在客戶端執行</h3><p>RRRRRR 都是ERROR ◢▆▅▄▃崩╰(〒皿〒)╯潰▃▄▅▇◣<br><img src="https://imgur.com/T3lcH5T.png" alt="error"><br>因為本機端有網路,所以npoi的相依套件都會自動下載<br>但客戶端沒有網路阿QQ</p><h3 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h3><p>到C:\Users\User.nuget\packages<br>把本機端有相關的套件都複製下來貼到客戶端環境的.nuget<br><img src="https://imgur.com/ctwa9LJ.png" alt=".nuget"></p><p>接著客戶端的.nuget資料夾裡面也會有這些相依的套件,就可以正常的下載NPOI套件<br>就可以使用了(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</p><h3 id="沒有嘗試但覺得應該也可以的解法"><a href="#沒有嘗試但覺得應該也可以的解法" class="headerlink" title="沒有嘗試但覺得應該也可以的解法"></a>沒有嘗試但覺得應該也可以的解法</h3><ol><li><p>把相依套件也都從nuget官網把nupkg都下載下來到客戶端安裝一遍<br>(但NPOI的相依套件好多阿 放棄XD)</p></li><li><p>把本機端run出來的相關dll檔案放到客戶端，在專案把他參考進去(但要參考好多個喔)</p></li></ol><p>以上兩個是當時的備案，還是把.nuget放過去就可以下載比較快XD但還是有網路比較方便</p><hr><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><div class="note orange icon-padding disabled"><i class="note-icon fas fa-link"></i><p><a href="https://tzengshinfu.blogspot.com/2017/12/nuget.html">離線安裝Nuget套件</a></p></div><hr>]]></content>
       
@@ -25,6 +114,35 @@
             <tag> BackEnd </tag>
             
             <tag> .Net </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Postgre SQL 語法</title>
+      <link href="/posts/8d159c221411/"/>
+      <url>/posts/8d159c221411/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div class="note icon-padding simple"><i class="note-icon fas fa-paw"></i><p>待補</p></div><hr><h3 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h3><h2 id="postgre-正體中文使用手冊"><a href="#postgre-正體中文使用手冊" class="headerlink" title="postgre 正體中文使用手冊"></a><a href="https://docs.postgresql.tw/">postgre 正體中文使用手冊</a></h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> BackEnd </category>
+          
+          <category> Postgre SQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BackEnd </tag>
+            
+            <tag> Postgre SQL </tag>
             
         </tags>
       
